@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBCB0D02-2D15-4565-9380-6C4CD7E53E4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CL.Tools.LotteryTickets</RootNamespace>
+    <AssemblyName>CL.Tools.LotteryTickets</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\Lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\Lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\Lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\..\Lib\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\Lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LotteryBase.cs" />
+    <Compile Include="Lottery\11x5\HB11X5.cs" />
+    <Compile Include="Lottery\11x5\SD11X5.cs" />
+    <Compile Include="Lottery\DP\CJDLT.cs" />
+    <Compile Include="Lottery\DP\SSQ.cs" />
+    <Compile Include="Lottery\K3\JLK3.cs" />
+    <Compile Include="Lottery\K3\JXK3.cs" />
+    <Compile Include="Lottery\SSC\CQSSC.cs" />
+    <Compile Include="Lottery\SSC\JXSSC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CL.BLL\CL.Game.BLL\CL.Game.BLL.csproj">
+      <Project>{B46C62E7-2936-4298-8DBC-6A7D1C3FB977}</Project>
+      <Name>CL.Game.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.BLL\CL.Redis.BLL\CL.Redis.BLL.csproj">
+      <Project>{f7e8df8b-f60d-457e-9dcc-4f2596fcc41a}</Project>
+      <Name>CL.Redis.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.Entity\CL.Game.Entity\CL.Game.Entity.csproj">
+      <Project>{22736512-F2C2-42A9-9446-456EA9AD42DA}</Project>
+      <Name>CL.Game.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.Enum\CL.Enum.Common\CL.Enum.Common.csproj">
+      <Project>{3307D500-B76C-4435-B5B8-34AC7CB7D337}</Project>
+      <Name>CL.Enum.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.Plugins\CL.Plugins.Award\CL.Plugins.Award.csproj">
+      <Project>{9BBBCFFB-AF4C-46CB-A994-88E1123CCD94}</Project>
+      <Name>CL.Plugins.Award</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.Entity\CL.View.Entity\CL.View.Entity.csproj">
+      <Project>{6AD1025F-6D2F-498E-8B04-E693A3AE6776}</Project>
+      <Name>CL.View.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Tools.Common\CL.Tools.Common.csproj">
+      <Project>{4D4AEACE-08CB-4426-A868-7F5F5D20CF38}</Project>
+      <Name>CL.Tools.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Tools.RedisBase\CL.Tools.RedisBase.csproj">
+      <Project>{8fda8a8a-4036-467d-b1bd-bfc391023d42}</Project>
+      <Name>CL.Tools.RedisBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Tools.TicketInterface\CL.Tools.TicketInterface.csproj">
+      <Project>{3C7A8681-32DF-4485-AFA1-95C683AE42CC}</Project>
+      <Name>CL.Tools.TicketInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

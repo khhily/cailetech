@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Apply>
+  <ANDROID>
+    <GatewayUrl></GatewayUrl>
+    <HotUpdateUrl></HotUpdateUrl>
+    <UpdateUrl></UpdateUrl>
+    <WebAPIUrl></WebAPIUrl>
+    <SocketURL></SocketURL>
+    <Version></Version>
+    <Status></Status>
+  </ANDROID>
+  <IOS>
+    <GatewayUrl></GatewayUrl>
+    <HotUpdateUrl></HotUpdateUrl>
+    <UpdateUrl></UpdateUrl>
+    <WebAPIUrl></WebAPIUrl>
+    <SocketURL></SocketURL>
+    <Version></Version>
+    <Status></Status>
+  </IOS>
+  <WEB>
+    <GatewayUrl></GatewayUrl>
+    <HotUpdateUrl></HotUpdateUrl>
+    <UpdateUrl></UpdateUrl>
+    <WebAPIUrl></WebAPIUrl>
+    <SocketURL></SocketURL>
+    <Version></Version>
+    <Status></Status>
+  </WEB>
+  <OTHER>
+    <GatewayUrl></GatewayUrl>
+    <HotUpdateUrl></HotUpdateUrl>
+    <UpdateUrl></UpdateUrl>
+    <WebAPIUrl></WebAPIUrl>
+    <SocketURL></SocketURL>
+    <Version></Version>
+    <Status></Status>
+  </OTHER>
+</Apply>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EntryModel>
+  <Item LotteryName="吉林快3">
+    <InterfaceLotteryCode>126</InterfaceLotteryCode>
+    <SystemLotteryCode>101</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="江西快3">
+    <InterfaceLotteryCode>123</InterfaceLotteryCode>
+    <SystemLotteryCode>102</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="湖北11选5">
+    <InterfaceLotteryCode>124</InterfaceLotteryCode>
+    <SystemLotteryCode>201</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="山东11选5">
+    <InterfaceLotteryCode>112</InterfaceLotteryCode>
+    <SystemLotteryCode>202</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="重庆时时彩">
+    <InterfaceLotteryCode>121</InterfaceLotteryCode>
+    <SystemLotteryCode>301</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="快乐28">
+    <InterfaceLotteryCode>0</InterfaceLotteryCode>
+    <SystemLotteryCode>40010</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>Special</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="加拿大28">
+    <InterfaceLotteryCode>0</InterfaceLotteryCode>
+    <SystemLotteryCode>40020</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>Special</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="双色球">
+    <InterfaceLotteryCode>118</InterfaceLotteryCode>
+    <SystemLotteryCode>801</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/30 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">0 0/10 20-21 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+  <Item LotteryName="大乐透">
+    <InterfaceLotteryCode>106</InterfaceLotteryCode>
+    <SystemLotteryCode>901</SystemLotteryCode>
+    <InternalOutTicket Remark="0.外部接口 1.内部接口">0</InternalOutTicket>
+    <InterfaceType>HuaYang</InterfaceType>
+    <IntervalTime>0 0/1 07-01 * * ?</IntervalTime>
+    <TrappingTime Remark="补全遗漏号码间隔时间">0 0/30 8-23 * * ?</TrappingTime>
+    <RevokeSchemeTime Remark="期号截止撤销等待拆票投注订单间隔时间">0 0/10 20-21 * * ?</RevokeSchemeTime>
+    <AgenterId></AgenterId>
+    <AgenterPwd></AgenterPwd>
+    <UserName></UserName>
+    <InterfaceAddress></InterfaceAddress>
+  </Item>
+</EntryModel>

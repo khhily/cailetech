@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AD1025F-6D2F-498E-8B04-E693A3AE6776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CL.View.Entity</RootNamespace>
+    <AssemblyName>CL.View.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\Lib\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicTable\ValueTable.cs" />
+    <Compile Include="ElectronicTicket\udv_Ticket.cs" />
+    <Compile Include="Game\cv_Rebateist.cs" />
+    <Compile Include="Game\cv_Ticket.cs" />
+    <Compile Include="Game\cv_UserRebate.cs" />
+    <Compile Include="Game\udv_ActivityApply.cs" />
+    <Compile Include="Game\udv_AwardPlayCode.cs" />
+    <Compile Include="Game\udv_Awards.cs" />
+    <Compile Include="Game\udv_BettingTickets.cs" />
+    <Compile Include="Game\udv_BuyLotReport.cs" />
+    <Compile Include="Game\udv_ChaseDetailRecord.cs" />
+    <Compile Include="Game\udv_ChaseList.cs" />
+    <Compile Include="Game\udv_ChaseRevoke.cs" />
+    <Compile Include="Game\udv_ChaseTaskDetails.cs" />
+    <Compile Include="Game\udv_ChaseTasks.cs" />
+    <Compile Include="Game\udv_ChaseTasksDetails.cs" />
+    <Compile Include="Game\udv_CheckingReport.cs" />
+    <Compile Include="Game\udv_ComputeTicket.cs" />
+    <Compile Include="Game\udv_ComputeTicketChaseTasks.cs" />
+    <Compile Include="Game\udv_ExpireRevokeChase.cs" />
+    <Compile Include="Game\udv_Interval.cs" />
+    <Compile Include="Game\udv_IsAwardActivity.cs" />
+    <Compile Include="Game\udv_IsuseInfo.cs" />
+    <Compile Include="Game\udv_ManualOpenLottery.cs" />
+    <Compile Include="Game\udv_NewsTypes.cs" />
+    <Compile Include="Game\udv_OrderDetailReport.cs" />
+    <Compile Include="Game\udv_OutTicketReport.cs" />
+    <Compile Include="Game\udv_OutTickets.cs" />
+    <Compile Include="Game\udv_OverChaseTasksExamine.cs" />
+    <Compile Include="Game\udv_Parameter.cs" />
+    <Compile Include="Game\udv_PlayTypes.cs" />
+    <Compile Include="Game\udv_RechargeDetailReport.cs" />
+    <Compile Include="Game\udv_ReportPayDetail.cs" />
+    <Compile Include="Game\udv_RevokeSchemes.cs" />
+    <Compile Include="Game\udv_SchemeBetData.cs" />
+    <Compile Include="Game\udv_SchemeChaseTask.cs" />
+    <Compile Include="Game\udv_SchemeChaseTaskDetail.cs" />
+    <Compile Include="Game\udv_SchemeETicketAward.cs" />
+    <Compile Include="Game\udv_Schemes.cs" />
+    <Compile Include="Game\udv_SchemesDetail.cs" />
+    <Compile Include="Game\udv_SchemesDetailsWin.cs" />
+    <Compile Include="Game\udv_SchemesMain.cs" />
+    <Compile Include="Game\udv_Special.cs" />
+    <Compile Include="Game\udv_Tasks.cs" />
+    <Compile Include="Game\udv_ttb.cs" />
+    <Compile Include="Game\udv_TradeDetailReport.cs" />
+    <Compile Include="Game\udv_UserAccountDetail.cs" />
+    <Compile Include="Game\udv_UserAccountReport.cs" />
+    <Compile Include="Game\udv_UserInfo.cs" />
+    <Compile Include="Game\udv_UserPay.cs" />
+    <Compile Include="Game\udv_UserPayReRefund.cs" />
+    <Compile Include="Game\udv_UsersRecordList.cs" />
+    <Compile Include="Game\udv_UsersWithdraw.cs" />
+    <Compile Include="Game\udv_WinAwardReport.cs" />
+    <Compile Include="Game\udv_WinTypes.cs" />
+    <Compile Include="Game\udv_WithdrawCount.cs" />
+    <Compile Include="Game\udv_WithdrawDetailReport.cs" />
+    <Compile Include="Game\udv_WithdrawReport.cs" />
+    <Compile Include="Integrated\udv_Integrated.cs" />
+    <Compile Include="Interface\udv_ParaAccBalance.cs" />
+    <Compile Include="Interface\udv_ParaBettingTicker.cs" />
+    <Compile Include="Interface\udv_ParaIsuse.cs" />
+    <Compile Include="Interface\udv_ParaOutTicket.cs" />
+    <Compile Include="Interface\udv_ParaWinInfo.cs" />
+    <Compile Include="Interface\udv_ParaWinIsuse.cs" />
+    <Compile Include="Interface\udv_ResultBalance.cs" />
+    <Compile Include="Interface\udv_ResultBetting.cs" />
+    <Compile Include="Interface\udv_ResultIssue.cs" />
+    <Compile Include="Interface\udv_ResultOutTicket.cs" />
+    <Compile Include="Interface\udv_ResultWinInfo.cs" />
+    <Compile Include="Interface\udv_ResultWinIsuse.cs" />
+    <Compile Include="Other\ReptileHB11X5Info.cs" />
+    <Compile Include="Other\SiteConfig.cs" />
+    <Compile Include="Other\udv_HttpProxy.cs" />
+    <Compile Include="Other\udv_JsonResult.cs" />
+    <Compile Include="Other\udv_Sharing.cs" />
+    <Compile Include="Other\udv_WFTPayNotify.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redis\udv_BankCard.cs" />
+    <Compile Include="Redis\udv_Identity.cs" />
+    <Compile Include="Redis\udv_MobileSignIn.cs" />
+    <Compile Include="Redis\udv_Recharge.cs" />
+    <Compile Include="Redis\udv_SignIn.cs" />
+    <Compile Include="Redis\udv_TokenInfo.cs" />
+    <Compile Include="Redis\udv_VerifyCode.cs" />
+    <Compile Include="Redis\udv_WithdrawDeposit.cs" />
+    <Compile Include="Coupons\udv_Coupons.cs" />
+    <Compile Include="Coupons\udv_CouponsCDKeyList.cs" />
+    <Compile Include="Coupons\udv_CouponsExpireTimeList.cs" />
+    <Compile Include="Coupons\udv_CouponsList.cs" />
+    <Compile Include="Coupons\udv_ReportCDKeyList.cs" />
+    <Compile Include="Coupons\udv_ReportCouponsList.cs" />
+    <Compile Include="SystemInfo\udv_LoginCount.cs" />
+    <Compile Include="SystemInfo\udv_Manager.cs" />
+    <Compile Include="SystemInfo\udv_Navigation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CL.Dapper\CL.Dapper.Repository\CL.Dapper.Repository.csproj">
+      <Project>{68e756d6-bd84-452e-b45c-57e6f7bbfccb}</Project>
+      <Name>CL.Dapper.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.Dapper\CL.Dapper.SimpleCRUD\CL.Dapper.SimpleCRUD.csproj">
+      <Project>{862f75db-db5e-4d5c-a4b2-79f17b1b4288}</Project>
+      <Name>CL.Dapper.SimpleCRUD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Entity.Json\CL.Json.Entity.csproj">
+      <Project>{cebc7d84-68a9-4a03-8191-386b696201c4}</Project>
+      <Name>CL.Json.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Game.Entity\CL.Game.Entity.csproj">
+      <Project>{22736512-F2C2-42A9-9446-456EA9AD42DA}</Project>
+      <Name>CL.Game.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.RedPacket.Entity\CL.Coupons.Entity.csproj">
+      <Project>{119984D5-1A2C-4C0D-A10B-D5919FCA1592}</Project>
+      <Name>CL.Coupons.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CL.Tools\CL.Tools.Common\CL.Tools.Common.csproj">
+      <Project>{4d4aeace-08cb-4426-a868-7f5f5d20cf38}</Project>
+      <Name>CL.Tools.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

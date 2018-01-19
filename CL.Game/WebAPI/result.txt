@@ -1,0 +1,23 @@
+=====================支付配置路径：F:\Project\trunk\CaileGame\CL.Game\WebAPI\Config\configyfb.properties=====================
+=====================支付配置加载错误=====================
+key:未将对象引用设置到对象的实例。 value:   在 CL.Tools.Common.YFBH5PayHelper.WriteFile(String title, SortedDictionary`2 _param) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 229
+   在 CL.Tools.Common.YFBH5PayHelper.LoadCfg(String FilePath) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 193
+   在 CL.Tools.Common.YFBH5PayHelper..ctor() 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 65
+=====================支付配置路径：F:\Project\trunk\CaileGame\CL.Game\WebAPI\Config\configyfb.properties=====================
+=====================支付配置加载错误=====================
+key:未将对象引用设置到对象的实例。 value:   在 CL.Tools.Common.YFBH5PayHelper.WriteFile(String title, SortedDictionary`2 _param) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 240
+   在 CL.Tools.Common.YFBH5PayHelper.LoadCfg(String FilePath) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 193
+   在 CL.Tools.Common.YFBH5PayHelper..ctor() 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 65
+=====================支付配置路径：F:\Project\trunk\CaileGame\CL.Game\WebAPI\Config\configyfb.properties=====================
+=====================支付配置加载错误=====================
+key:未将对象引用设置到对象的实例。 value:   在 CL.Tools.Common.YFBH5PayHelper.WriteFile(String title, SortedDictionary`2 _param) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 240
+   在 CL.Tools.Common.YFBH5PayHelper.LoadCfg(String FilePath) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 193
+   在 CL.Tools.Common.YFBH5PayHelper..ctor() 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 65
+=====================支付配置路径：F:\Project\trunk\CaileGame\CL.Game\WebAPI\Config\configyfb.properties=====================
+=====================支付配置加载错误=====================
+key:未将对象引用设置到对象的实例。 value:   在 CL.Tools.Common.YFBH5PayHelper.WriteFile(String title, SortedDictionary`2 _param) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 240
+   在 CL.Tools.Common.YFBH5PayHelper.LoadCfg(String FilePath) 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 193
+   在 CL.Tools.Common.YFBH5PayHelper..ctor() 位置 F:\Project\trunk\CaileGame\CL.Tools\CL.Tools.Common\YFBH5PayHelper.cs:行号 65
+=====================支付配置信息读取：{"mch_id":"103520086863","key":"83c081bb7e44a4d2c6c3ce772b94452e","req_url":"https://r630.speedpos.cn:17630/urlapi/gateway/alipay","query_url":"https://r630.speedpos.cn:17630/urlapi/gateway/doquery","notify_url":"http://182.92.104.230:2010/WFTPay/Notify.aspx","version":"2.0"}=====================
+=====================支付配置信息读取：{"mch_id":"103520086863","key":"83c081bb7e44a4d2c6c3ce772b94452e","req_url":"https://r630.speedpos.cn:17630/urlapi/gateway/alipay","query_url":"https://r630.speedpos.cn:17630/urlapi/gateway/doquery","notify_url":"http://182.92.104.230:2010/WFTPay/Notify.aspx","version":"2.0"}=====================
+=====================支付配置信息读取：{"mch_id":"103520086863","key":"83c081bb7e44a4d2c6c3ce772b94452e","req_url":"https://r630.speedpos.cn:17630/urlapi/gateway/alipay","query_url":"https://r630.speedpos.cn:17630/urlapi/gateway/doquery","notify_url":"http://182.92.104.230:2010/WFTPay/Notify.aspx","version":"2.0"}=====================

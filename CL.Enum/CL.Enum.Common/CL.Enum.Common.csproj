@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3307D500-B76C-4435-B5B8-34AC7CB7D337}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CL.Enum.Common</RootNamespace>
+    <AssemblyName>CL.Enum.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity\ActivityApply.cs" />
+    <Compile Include="Activity\ActivityType.cs" />
+    <Compile Include="Activity\ActivityUnit.cs" />
+    <Compile Include="Activity\Regular\HolidayType.cs" />
+    <Compile Include="Activity\Regular\RegularStatus.cs" />
+    <Compile Include="Activity\Regular\RegularType.cs" />
+    <Compile Include="CaileEnums.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DbConnectionEnum.cs" />
+    <Compile Include="IM\IMRecordEnums.cs" />
+    <Compile Include="IM\SendToEnums.cs" />
+    <Compile Include="LotteryTrendChart\LotBaseType.cs" />
+    <Compile Include="Lottery\CJDLTPlayCode.cs" />
+    <Compile Include="Lottery\CQSSCPlayCode.cs" />
+    <Compile Include="Lottery\CQSSCWinCode.cs" />
+    <Compile Include="Lottery\HB11X5PlayCode.cs" />
+    <Compile Include="Lottery\JLXK3PlayCode.cs" />
+    <Compile Include="Lottery\JXK3PlayCode.cs" />
+    <Compile Include="Lottery\JXSSCPlayCode.cs" />
+    <Compile Include="Lottery\LotteryInfo.cs" />
+    <Compile Include="Lottery\SD11X5PlayCode.cs" />
+    <Compile Include="Lottery\SSQPlayCode.cs" />
+    <Compile Include="Other\EquipmentEnum.cs" />
+    <Compile Include="Other\HttpMethedEnum.cs" />
+    <Compile Include="Other\IMCode.cs" />
+    <Compile Include="Other\TicketSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Push\JiGuang\PlatformEnum.cs" />
+    <Compile Include="Push\JiGuang\StyleEnum.cs" />
+    <Compile Include="RedisKeysEnum.cs" />
+    <Compile Include="ResultCode.cs" />
+    <Compile Include="Status\AuditingStatusEnum.cs" />
+    <Compile Include="Status\HYInterfaceStatusEnum.cs" />
+    <Compile Include="Status\PayOutStatus.cs" />
+    <Compile Include="Status\QuashStatusEnum.cs" />
+    <Compile Include="Status\SalePointStatus.cs" />
+    <Compile Include="Status\SchemeStatusEnum.cs" />
+    <Compile Include="Status\TicketStatusEnum.cs" />
+    <Compile Include="Type\BankType.cs" />
+    <Compile Include="Type\BuyTypeEnum.cs" />
+    <Compile Include="Type\LoginTypeEnum.cs" />
+    <Compile Include="Type\PaymentBank.cs" />
+    <Compile Include="Type\PaymentTypeEnum.cs" />
+    <Compile Include="Type\StaticdataTypeEnum.cs" />
+    <Compile Include="Type\StopType.cs" />
+    <Compile Include="Type\TradeType.cs" />
+    <Compile Include="Type\VerifyTypeEnum.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
