@@ -19,13 +19,10 @@ namespace CL.AwardServer
         public FrmMain()
         {
             InitializeComponent();
-            button1.Visible = false;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            if (button1.Visible) return;
-
             #region 时钟
             quartzhelper.AddTrigger("ms", "ms_AwardServer_group", "*/1 * * * * ?", new Action(() =>
             {
@@ -144,10 +141,6 @@ namespace CL.AwardServer
                 nfico.Visible = false;
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
