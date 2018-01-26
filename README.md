@@ -12,23 +12,15 @@
  **系统架构和特点** 
 
 彩乐彩票一站式即时聊天购彩社区解决方案采用分布式、异步插件式架构。
-.采用微软当前最成熟稳定的.NET FRAMEWORK 4.6.1，WebApi封装所有业务接口，网站、IOS、Android通用接入。
-
-.模块化设计，易于扩展和极其灵活。
-
-.采用微软最新的数据库 SqlServer2014 Enterprise，高性能，更易用。
-
-.业务缓存使用Redis实现。
-
-.模块通信使用消息队列MSMQ实现，可以响应上千并发请求。
-
-.健壮的保障机制，关键的业务均采用双通道机制，确保其中一个通道宕机后，能够及时的切换到另外的通道上。
-
-.业务模块下单、拆票、出票、算奖、返奖之间采用独立服务的方式构建，使用消息队列进行模块通信，各自保持高度的独立。
-
+采用微软当前最成熟稳定的.NET FRAMEWORK 4.6.1，WebApi封装所有业务接口，网站、IOS、Android通用接入。
+模块化设计，易于扩展和极其灵活。
+采用微软最新的数据库 SqlServer2014 Enterprise，高性能，更易用。
+业务缓存使用Redis实现。
+模块通信使用消息队列MSMQ实现，可以响应上千并发请求。
+健壮的保障机制，关键的业务均采用双通道机制，确保其中一个通道宕机后，能够及时的切换到另外的通道上。
+业务模块下单、拆票、出票、算奖、返奖之间采用独立服务的方式构建，使用消息队列进行模块通信，各自保持高度的独立。
 
 在不影响到原有业务的情况下，遵循平台的规范协议，可以轻松的接入新的彩种，一个新的彩种5天内就可上线运营。
-
 
  **业务系统**  
 
@@ -40,6 +32,9 @@
 	PHPSocket.IO是PHP版本的Socket.IO服务端实现，基于workerman开发，用于替换node.js版本Socket.IO服务端。PHPSocket.IO底层采用websocket协议通讯，如果客户端不支持websocket协议， 则会自动采用http长轮询的方式通讯。PHPSocket.IO实现的Polling通信机制包括Adobe Flash Socket、AJAX长轮询、JSONP轮询等。具体采用哪种机制通讯对于开发者完全透明， 开发者使用的是统一的接口。
 
 彩乐彩票开源社区：  http://forum.caile.net/
+
 彩票程序展示:   http://m.caile.cc/
+
 客户端开源地址：https://gitee.com/cailetech/lotteryclient
+
 服务器开源地址：https://gitee.com/cailetech/lotteryserver
