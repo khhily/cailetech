@@ -224,7 +224,7 @@ namespace CL.Game.BLL.PayInterface
 
                 #region 参数组合
                 //加载配置数据
-                this.cfg = WFTPayHelper.loadCfg("xmlconfig");
+                this.cfg = WFTPayHelper.loadCfg();
                 //初始化数据  
                 this.reqHandler.setGateUrl(this.cfg["req_url"].ToString());
                 this.reqHandler.setKey(this.cfg["key"].ToString());
@@ -341,7 +341,7 @@ namespace CL.Game.BLL.PayInterface
 
                 #region 参数组合
                 //加载配置数据
-                this.cfg = WFTPayHelper.loadCfg("xmlconfig");
+                this.cfg = WFTPayHelper.loadCfg();
                 //初始化数据  
                 this.reqHandler.setGateUrl(this.cfg["req_url"].ToString());
                 this.reqHandler.setKey(this.cfg["key"].ToString());

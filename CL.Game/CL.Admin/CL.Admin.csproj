@@ -272,8 +272,7 @@
     <Content Include="admin\withdraw\operation.aspx" />
     <Content Include="admin\withdraw\pay_list.aspx" />
     <Content Include="admin\withdraw\refund_list.aspx" />
-    <Content Include="Config\ApplyConfig.xml" />
-    <Content Include="Config\Interface.xml" />
+    <Content Include="Config\System.xml" />
     <Content Include="css\image1.gif" />
     <Content Include="css\image2.gif" />
     <Content Include="css\jcrop.gif" />
@@ -628,8 +627,6 @@
     <Content Include="scripts\webuploader\webuploader.min.js" />
     <Content Include="tools\admin_ajax.ashx" />
     <Content Include="tools\upload_ajax.ashx" />
-    <Content Include="Config\config.properties" />
-    <Content Include="Config\configwft.properties" />
     <None Include="Properties\PublishProfiles\CL.Admin.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

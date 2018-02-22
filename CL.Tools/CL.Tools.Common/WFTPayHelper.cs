@@ -177,30 +177,15 @@ namespace CL.Tools.Common
         /// 加载配置文件
         /// </summary>
         /// <returns></returns>
-        public static Dictionary<String, String> loadCfg(string FilePath = "Config")
+        public static Dictionary<String, String> loadCfg()
         {
-            string cfgPath = Path.GetDirectoryName(AppDomain.CurrentDomain.SetupInformation.ApplicationBase)
-                                + Path.DirectorySeparatorChar + FilePath + Path.DirectorySeparatorChar + "configwft.properties";
             Dictionary<String, String> cfg = new Dictionary<string, string>();
-            using (StreamReader sr = new StreamReader(cfgPath))
-            {
-                while (sr.Peek() >= 0)
-                {
-                    string line = sr.ReadLine();
-                    if (line.StartsWith("#"))
-                    {
-                        continue;
-                    }
-                    int startInd = line.IndexOf("=");
-                    string key = line.Substring(0, startInd);
-                    string val = line.Substring(startInd + 1, line.Length - (startInd + 1));
-                    if (!cfg.ContainsKey(key) && !string.IsNullOrEmpty(val))
-                    {
-                        cfg.Add(key, val);
-                    }
-                }
-            }
-
+            XmlNode Node = Utils.QueryConfigNode("root/paywft");
+            cfg.Add("req_url", Node.SelectSingleNode("requrl").InnerText);
+            cfg.Add("key", Node.SelectSingleNode("mchkey").InnerText);
+            cfg.Add("mch_id", Node.SelectSingleNode("mchid").InnerText);
+            cfg.Add("version", Node.SelectSingleNode("version").InnerText);
+            cfg.Add("notify_url", Node.SelectSingleNode("notifyurl").InnerText);
             return cfg;
         }
         /// <summary>

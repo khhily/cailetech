@@ -2,6 +2,7 @@
 using CL.Enum.Common.Status;
 using CL.Game.BLL;
 using CL.Game.Entity;
+using CL.Tools.Common;
 using CL.Tools.TicketInterface;
 using CL.View.Entity.Game;
 using CL.View.Entity.Interface;
@@ -138,11 +139,10 @@ namespace CL.Admin.admin.lotteries
         protected XmlNode SetInterfaceXml(int LotteryCode)
         {
             XmlNode RecXml = null;
-            XmlDocument doc = new XmlDocument();
-            doc.Load(AppDomain.CurrentDomain.BaseDirectory + "Config/Interface.xml");
-            XmlNodeList XmlList = doc.SelectNodes("//EntryModel/Item");
+            XmlNode Node = Utils.QueryConfigNode("root/interface");
+            XmlNodeList XmlList = Node.SelectNodes("item");
             foreach (XmlNode item in XmlList)
-                if (Convert.ToInt32(item.SelectSingleNode("SystemLotteryCode").InnerText) == LotteryCode)
+                if (Convert.ToInt32(item.SelectSingleNode("systemlotterycode").InnerText) == LotteryCode)
                 {
                     RecXml = item;
                     break;

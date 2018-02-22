@@ -1,6 +1,8 @@
-﻿using ServiceStack.Redis;
+﻿using CL.Tools.Common;
+using ServiceStack.Redis;
 using System;
 using System.Linq;
+using System.Xml;
 
 namespace CL.Tools.RedisBase
 {
@@ -9,7 +11,7 @@ namespace CL.Tools.RedisBase
         /// <summary>
         /// redis配置文件信息
         /// </summary>
-        private static RedisConfigInfo redisConfigInfo = RedisConfigInfo.GetConfig();
+        private static RedisConfigInfo redisConfigInfo = new RedisConfigInfo();
 
         private static PooledRedisClientManager prcm;
         /// <summary>
@@ -17,7 +19,21 @@ namespace CL.Tools.RedisBase
         /// </summary>
         static RedisManager()
         {
+            redisConfigInfo = GetConfig();
             CreateManager();
+        }
+        private static RedisConfigInfo GetConfig()
+        {
+            RedisConfigInfo config = new RedisConfigInfo();
+            XmlNode Node = Utils.QueryConfigNode("root/redis");
+            config.AutoStart = Node.SelectSingleNode("autostart").InnerText;
+            config.LocalCacheTime = Node.SelectSingleNode("localcachetime").InnerText;
+            config.MaxReadPoolSize = Node.SelectSingleNode("maxreadpoolsize").InnerText;
+            config.MaxWritePoolSize = Node.SelectSingleNode("maxwritepoolsize").InnerText;
+            config.ReadServerList = Node.SelectSingleNode("readserverlist").InnerText;
+            config.WriteServerList = Node.SelectSingleNode("writeserverlist").InnerText;
+            config.RecordeLog = Node.SelectSingleNode("recordelog").InnerText;
+            return config;
         }
         /// <summary>
         /// 创建链接池管理对象

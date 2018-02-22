@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
+using System.Xml;
 
 namespace CL.Tools.Common
 {
@@ -1710,6 +1711,72 @@ namespace CL.Tools.Common
                 result = reader.ReadToEnd();
             }
             return result;
+        }
+        #endregion
+
+        #region 系统配置
+
+        /// <summary>
+        /// 查询配置节点
+        /// </summary>
+        /// <param name="XmlNode"></param>
+        /// <returns></returns>
+        public static XmlNode QueryConfigNode(string xmlNode)
+        {
+            try
+            {
+                string cacheKey = string.Format("Cache_ConfigNode");
+                string cacheContent = CacheHelper.Get<string>(cacheKey);
+                if (string.IsNullOrEmpty(cacheContent))
+                {
+                    string cfgPath = string.Format("{0}{1}Config{2}System.xml", Path.GetDirectoryName(AppDomain.CurrentDomain.SetupInformation.ApplicationBase),
+                                     Path.DirectorySeparatorChar,
+                                     Path.DirectorySeparatorChar
+                                     );
+                    cacheContent = SetConfigNode(cfgPath);
+                    if (!string.IsNullOrEmpty(cacheContent))
+                    {
+                        CacheHelper.Insert(cacheKey, cacheContent, 60);
+                    }
+                }
+                return SetConfigNode(xmlNode, cacheContent);
+            }
+            catch (Exception ex)
+            {
+                new Log("SystemSetInfoBLL").Write(string.Format("查询配置节点错误：{0}", ex.Message), true);
+                return null;
+            }
+        }
+        /// <summary>
+        /// 匹配节点
+        /// </summary>
+        /// <param name="xmlNode"></param>
+        /// <param name="content"></param>
+        /// <returns></returns>
+        public static XmlNode SetConfigNode(string xmlNode, string content)
+        {
+            if (!string.IsNullOrEmpty(content))
+            {
+                XmlDocument xml = new XmlDocument();
+                xml.LoadXml(content);
+                return xml.SelectSingleNode(xmlNode);
+            }
+            return null;
+        }
+        /// <summary>
+        /// 匹配节点
+        /// </summary>
+        /// <param name="cfgPath"></param>
+        /// <returns></returns>
+        public static string SetConfigNode(string cfgPath)
+        {
+            if (!string.IsNullOrEmpty(cfgPath))
+            {
+                XmlDocument xml = new XmlDocument();
+                xml.Load(cfgPath);
+                return xml.InnerXml;
+            }
+            return null;
         }
         #endregion
     }

@@ -1,48 +1,10 @@
 ﻿using CL.Tools.Common;
-using System;
-using System.IO;
+using System.Xml;
 
 namespace CL.Tools.RedisBase
 {
     public class RedisConfigInfo
     {
-        /// <summary>
-        /// 加载配置文件
-        /// </summary>
-        /// <returns></returns>
-        public static RedisConfigInfo GetConfig(string FilePath = "Config")
-        {
-            string CacheKey = "Cache_RedisConfigInfo";
-            RedisConfigInfo Entity = CacheHelper.Get<RedisConfigInfo>(CacheKey);
-            if (Entity == null)
-            {
-                string cfgPath = Path.GetDirectoryName(AppDomain.CurrentDomain.SetupInformation.ApplicationBase)
-                                    + Path.DirectorySeparatorChar + FilePath + Path.DirectorySeparatorChar + "config.properties";
-                Entity = new RedisConfigInfo();
-                var Properties = Entity.GetType().GetProperties();
-                using (StreamReader sr = new StreamReader(cfgPath))
-                {
-                    while (sr.Peek() >= 0)
-                    {
-                        string line = sr.ReadLine();
-                        if (line.StartsWith("#"))
-                        {
-                            continue;
-                        }
-                        int startInd = line.IndexOf("=");
-                        string key = line.Substring(0, startInd);
-                        string val = line.Substring(startInd + 1, line.Length - (startInd + 1));
-                        foreach (var PropertyInfo in Properties)
-                            if (PropertyInfo.Name.Trim().Equals(key))
-                                PropertyInfo.SetValue(Entity, val);
-                    }
-                }
-                //本地缓存
-                CacheHelper.Insert(CacheKey, Entity, 60);
-            }
-            return Entity;
-        }
-
         /// <summary>
         /// 可写的Redis链接地址
         /// </summary>

@@ -167,8 +167,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\ApplyConfig.xml" />
-    <Content Include="Config\Interface.xml" />
+    <Content Include="Config\System.xml" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -201,9 +200,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Config\config.properties" />
-    <Content Include="Config\configwft.properties" />
-    <Content Include="MSMQManager.ini" />
+    <Content Include="Config\MSMQManager.ini" />
     <Content Include="Config\site.config" />
     <None Include="Properties\PublishProfiles\CL.WebAPI.pubxml" />
     <None Include="Properties\PublishProfiles\webapi.pubxml" />

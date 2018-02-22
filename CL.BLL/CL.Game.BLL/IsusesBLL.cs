@@ -382,14 +382,13 @@ namespace CL.Game.BLL
                         {
                             try
                             {
-                                string InterfaceConfig = ConfigHelper.Get("INTERFACECONFIG");
-                                XmlDocument doc = new XmlDocument();
-                                doc.Load(System.Web.HttpContext.Current.Server.MapPath(InterfaceConfig));
-                                if (doc != null)
+                                XmlNode Node = Utils.QueryConfigNode("root/interface");
+                                if (Node != null)
                                 {
-                                    foreach (XmlNode xml in doc.SelectNodes("//EntryModel/Item"))
+                                    XmlNodeList XmlList = Node.SelectNodes("item");
+                                    foreach (XmlNode xml in XmlList)
                                     {
-                                        if (Convert.ToInt32(xml.SelectSingleNode("SystemLotteryCode").InnerText) == LotteryCode)
+                                        if (Convert.ToInt32(xml.SelectSingleNode("systemlotterycode").InnerText) == LotteryCode)
                                         {
                                             InterfaceBase InterTicker = new InterfaceBase()[xml];
                                             udv_ParaIsuse ParaIsuse = new udv_ParaIsuse()

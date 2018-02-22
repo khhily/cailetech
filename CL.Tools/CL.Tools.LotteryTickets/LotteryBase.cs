@@ -45,7 +45,7 @@ namespace CL.Tools.LotteryTickets
             get
             {
                 if (node == null) return null;
-                int lotterycode = Convert.ToInt32(node.SelectSingleNode("SystemLotteryCode").InnerText);
+                int lotterycode = Convert.ToInt32(node.SelectSingleNode("systemlotterycode").InnerText);
                 switch (lotterycode)
                 {
                     case 101:
