@@ -2,45 +2,45 @@
 <root>
   <apply>
     <android>
-      <gateway>http://10.0.1.123:10010</gateway>
-      <hotupdate>http://10.0.1.123:10010</hotupdate>
-      <update>http://dl.caile.cc/CaiLe_V1.2.0.apk</update>
-      <webapi>http://10.0.1.123:10010</webapi>
-      <socket>http://162.251.20.37:28820</socket>
+      <gateway>http://127.0.0.1:10010</gateway>
+      <hotupdate>http://127.0.0.1:10010</hotupdate>
+      <update>http://127.0.0.1/CaiLe_V1.2.0.apk</update>
+      <webapi>http://127.0.0.1:10010</webapi>
+      <socket>http://127.0.0.1:28820</socket>
       <version>1.4.0.20171211</version>
       <status>1</status>
     </android>
     <ios>
-      <gateway>http://10.0.1.123:10010</gateway>
-      <hotupdate>http://10.0.1.123:10010</hotupdate>
-      <update>http://dl.caile.cc/CaiLe_V1.2.0.apk</update>
-      <webapi>http://10.0.1.123:10010</webapi>
-      <socket>http://162.251.20.37:28820</socket>
+      <gateway>http://127.0.0.1:10010</gateway>
+      <hotupdate>http://127.0.0.1:10010</hotupdate>
+      <update>http://127.0.0.1/CaiLe_V1.2.0.apk</update>
+      <webapi>http://127.0.0.1:10010</webapi>
+      <socket>http://127.0.0.1:28820</socket>
       <version>1.4.0.20171211</version>
       <status>1</status>
     </ios>
     <web>
-      <gateway>http://10.0.1.123:10010</gateway>
-      <hotupdate>http://10.0.1.123:10010</hotupdate>
-      <update>http://dl.caile.cc/CaiLe_V1.2.0.apk</update>
-      <webapi>http://10.0.1.123:10010</webapi>
-      <socket>http://162.251.20.37:28820</socket>
+      <gateway>http://127.0.0.1:10010</gateway>
+      <hotupdate>http://127.0.0.1:10010</hotupdate>
+      <update>http://127.0.0.1/CaiLe_V1.2.0.apk</update>
+      <webapi>http://127.0.0.1:10010</webapi>
+      <socket>http://127.0.0.1:28820</socket>
       <version>1.4.0.20171211</version>
       <status>1</status>
     </web>
     <other>
-      <gateway>http://10.0.1.123:10010</gateway>
-      <hotupdate>http://10.0.1.123:10010</hotupdate>
-      <update>http://dl.caile.cc/CaiLe_V1.2.0.apk</update>
-      <webapi>http://10.0.1.123:10010</webapi>
-      <socket>http://162.251.20.37:28820</socket>
+      <gateway>http://127.0.0.1:10010</gateway>
+      <hotupdate>http://127.0.0.1:10010</hotupdate>
+      <update>http://127.0.0.1/CaiLe_V1.2.0.apk</update>
+      <webapi>http://127.0.0.1:10010</webapi>
+      <socket>http://127.0.0.1:28820</socket>
       <version>1.4.0.20171211</version>
       <status>1</status>
     </other>
   </apply>
   <redis>
-    <writeserverlist>182.92.104.230:6379</writeserverlist>
-    <readserverlist>182.92.104.230:6379</readserverlist>
+    <writeserverlist>127.0.0.1:6379</writeserverlist>
+    <readserverlist>127.0.0.1:6379</readserverlist>
     <maxwritepoolsize>60</maxwritepoolsize>
     <maxreadpoolsize>60</maxreadpoolsize>
     <autostart>true</autostart>
@@ -48,27 +48,27 @@
     <recordelog>false</recordelog>
   </redis>
   <paywft>
-    <mchid>102540111559</mchid>
-    <mchkey>b6bd61b6c1f5d96173f1b1e5b2646312</mchkey>
+    <mchid></mchid>
+    <mchkey></mchkey>
     <requrl>https://pay.swiftpass.cn/pay/gateway</requrl>
-    <notifyurl>http://gateway.caile.cc:888/WFTPay/Notify.aspx</notifyurl>
+    <notifyurl>http://127.0.0.1:888/WFTPay/Notify.aspx</notifyurl>
     <version>2.0</version>
   </paywft>
   <payyfb>
-    <mchid>103520086863</mchid>
-    <mchkey>83c081bb7e44a4d2c6c3ce772b94452e</mchkey>
+    <mchid></mchid>
+    <mchkey></mchkey>
     <requrl>https://r630.speedpos.cn:17630/urlapi/gateway/alipay</requrl>
     <queryurl>https://r630.speedpos.cn:17630/urlapi/gateway/doquery</queryurl>
-    <notifyurl>http://182.92.104.230:2010/WFTPay/Notify_yfb.aspx</notifyurl>
+    <notifyurl>http://127.0.0.1:888/WFTPay/Notify_yfb.aspx</notifyurl>
     <version>2.0</version>
   </payyfb>
   <paywechat>
-    <mchid>1493540832</mchid>
-    <mchkey>75b4cd046f358aff82c8a855a99b06ec</mchkey>
-    <appid>wx16c3581f38be23ec</appid>
-    <appsecret>a40f80851ccf4e157cce67c411151130</appsecret>
+    <mchid></mchid>
+    <mchkey></mchkey>
+    <appid></appid>
+    <appsecret></appsecret>
     <requrl>https://api.mch.weixin.qq.com/pay/unifiedorder</requrl>
-    <notifyurl>http://182.92.104.230:2010/WFTPay/Notify_wechat.aspx</notifyurl>
+    <notifyurl>http://127.0.0.1:888/WFTPay/Notify_wechat.aspx</notifyurl>
     <version>2.0</version>
   </paywechat>
   <interface>
@@ -80,10 +80,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="江西快3">
       <interfacelotterycode>123</interfacelotterycode>
@@ -93,10 +93,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="湖北11选5">
       <interfacelotterycode>124</interfacelotterycode>
@@ -106,10 +106,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="山东11选5">
       <interfacelotterycode>112</interfacelotterycode>
@@ -119,10 +119,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="重庆时时彩">
       <interfacelotterycode>121</interfacelotterycode>
@@ -132,10 +132,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="快乐28">
       <interfacelotterycode>0</interfacelotterycode>
@@ -145,10 +145,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="加拿大28">
       <interfacelotterycode>0</interfacelotterycode>
@@ -158,10 +158,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/10 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">10 0/10 8-23 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="双色球">
       <interfacelotterycode>118</interfacelotterycode>
@@ -171,10 +171,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/30 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">0 0/10 20-21 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
     <item lotteryname="大乐透">
       <interfacelotterycode>106</interfacelotterycode>
@@ -184,10 +184,10 @@
       <intervaltime>0 0/1 07-01 * * ?</intervaltime>
       <trappingtime Remark="补全遗漏号码间隔时间">0 0/30 8-23 * * ?</trappingtime>
       <revokeschemetime Remark="期号截止撤销等待拆票投注订单间隔时间">0 0/10 20-21 * * ?</revokeschemetime>
-      <agenterid>10000910</agenterid>
-      <agenterpwd>a361b66561a0b99ff6c553badf1016d2</agenterpwd>
-      <username>10000910</username>
-      <interfaceaddress>http://b2blib.198fc.cn:8081/b2blib/lotteryxml.php</interfaceaddress>
+      <agenterid></agenterid>
+      <agenterpwd></agenterpwd>
+      <username></username>
+      <interfaceaddress></interfaceaddress>
     </item>
   </interface>
 </root>
