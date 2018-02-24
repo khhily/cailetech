@@ -123,6 +123,20 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
+USE [CaileGame]
+GO
+/****** Object:  Table [dbo].[CT_Activity]    Script Date: 2018/1/18 14:14:11 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+
+
+
+
 --根据方案号后去所有玩法
 CREATE FUNCTION [dbo].[F_GetSchemesPlayList](@SchemeID bigint)
 RETURNS VARCHAR(512)
@@ -198,15 +212,6 @@ end
 
 GO
 
-USE [CaileGame]
-GO
-/****** Object:  Table [dbo].[CT_Activity]    Script Date: 2018/1/18 14:14:11 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-SET ANSI_PADDING ON
-GO
 CREATE TABLE [dbo].[CT_Activity](
 	[ActivityID] [int] IDENTITY(1,1) NOT NULL,
 	[ActivityType] [int] NOT NULL,
