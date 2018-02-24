@@ -5,9 +5,9 @@ GO
 CREATE DATABASE [CaileGame]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'CaileGame', FILENAME = N'D:\CaileGame\CL.Database\Server\CaileGame.mdf' , SIZE = 606208KB , MAXSIZE = UNLIMITED, FILEGROWTH = 102400KB )
+( NAME = N'CaileGame', FILENAME = N'D:\DataBase\CaileGame.mdf' , SIZE = 606208KB , MAXSIZE = UNLIMITED, FILEGROWTH = 102400KB )
  LOG ON 
-( NAME = N'CaileGame_log', FILENAME = N'D:\CaileGame\CL.Database\Server\CaileGame.ldf' , SIZE = 2919424KB , MAXSIZE = 2048GB , FILEGROWTH = 204800KB )
+( NAME = N'CaileGame_log', FILENAME = N'D:\DataBase\CaileGame.ldf' , SIZE = 2919424KB , MAXSIZE = 2048GB , FILEGROWTH = 204800KB )
 GO
 
 ALTER DATABASE [CaileGame] SET COMPATIBILITY_LEVEL = 100
@@ -135,7 +135,7 @@ BEGIN
 	RETURN @Result
 END
 
-
+go
 
 --把用特定符号分隔的多个数据字符串变成一个表的一列，例如字符串'1,2,3,4,5' 将转换成一个表
 CREATE FUNCTION [dbo].[F_SplitStrToTable](@str VARCHAR(8000), @split CHAR(1))
