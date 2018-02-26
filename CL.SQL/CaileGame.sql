@@ -5,9 +5,9 @@ GO
 CREATE DATABASE [CaileGame]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'CaileGame', FILENAME = N'D:\CaileGame\CL.Database\Server\CaileGame.mdf' , SIZE = 606208KB , MAXSIZE = UNLIMITED, FILEGROWTH = 102400KB )
+( NAME = N'CaileGame', FILENAME = N'D:\DataBase\CaileGame.mdf' , SIZE = 606208KB , MAXSIZE = UNLIMITED, FILEGROWTH = 102400KB )
  LOG ON 
-( NAME = N'CaileGame_log', FILENAME = N'D:\CaileGame\CL.Database\Server\CaileGame.ldf' , SIZE = 2919424KB , MAXSIZE = 2048GB , FILEGROWTH = 204800KB )
+( NAME = N'CaileGame_log', FILENAME = N'D:\DataBase\CaileGame.ldf' , SIZE = 2919424KB , MAXSIZE = 2048GB , FILEGROWTH = 204800KB )
 GO
 
 ALTER DATABASE [CaileGame] SET COMPATIBILITY_LEVEL = 100
@@ -123,6 +123,20 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
+USE [CaileGame]
+GO
+/****** Object:  Table [dbo].[CT_Activity]    Script Date: 2018/1/18 14:14:11 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+
+
+
+
 --根据方案号后去所有玩法
 CREATE FUNCTION [dbo].[F_GetSchemesPlayList](@SchemeID bigint)
 RETURNS VARCHAR(512)
@@ -135,7 +149,7 @@ BEGIN
 	RETURN @Result
 END
 
-
+go
 
 --把用特定符号分隔的多个数据字符串变成一个表的一列，例如字符串'1,2,3,4,5' 将转换成一个表
 CREATE FUNCTION [dbo].[F_SplitStrToTable](@str VARCHAR(8000), @split CHAR(1))
@@ -198,15 +212,6 @@ end
 
 GO
 
-USE [CaileGame]
-GO
-/****** Object:  Table [dbo].[CT_Activity]    Script Date: 2018/1/18 14:14:11 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-SET ANSI_PADDING ON
-GO
 CREATE TABLE [dbo].[CT_Activity](
 	[ActivityID] [int] IDENTITY(1,1) NOT NULL,
 	[ActivityType] [int] NOT NULL,
