@@ -24,9 +24,10 @@ namespace CL.Tools.Common
                 XmlSerializer serializer = new XmlSerializer(type);
                 return serializer.Deserialize(fs);
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                //throw ex;
+                return null;
             }
             finally
             {

@@ -201,7 +201,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Config\MSMQManager.ini" />
-    <Content Include="Config\site.config" />
     <None Include="Properties\PublishProfiles\CL.WebAPI.pubxml" />
     <None Include="Properties\PublishProfiles\webapi.pubxml" />
     <None Include="Web.Debug.config">
