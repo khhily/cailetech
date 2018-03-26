@@ -34,7 +34,7 @@
 
 彩乐彩票开源社区：  http://forum.caile.net/
 
-彩票程序展示:   http://m.caile.cc/
+彩票程序展示:   http://appdl.caile.net/
 
 客户端开源地址：https://gitee.com/cailetech/lotteryclient
 
